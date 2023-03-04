@@ -1,0 +1,900 @@
+@font-face{
+  font-family: myFont;
+  src: url(./RoadRadio-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+}
+
+
+.hero_section{
+    background-image: url('./images/mainbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    
+  }
+  .logo{
+    display: flex;
+    flex: 2;
+    margin-left: 20px;
+    
+  }
+  .navbar_send{
+    margin-top: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex: 6;
+    justify-content: space-between;
+    width: 300px;
+    
+  }
+  
+  .nav-links li {
+    list-style: none;
+    padding: 5px 10px;
+    width: 300px;
+   
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    /* margin-right: 10px; */
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+
+    /* text-transform: uppercase; */
+    
+  }
+  
+  .slider {
+    display: none;
+    background-color: transparent;
+  }
+
+  .heroInfo{
+    margin-top: 20%;
+    margin-left: 100px;
+  }
+  .info{
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 117.4%;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    margin-bottom: 40px;
+    font-family: myFont;
+
+  }
+  .button{
+    width: 304px;
+    height: 74px;
+    background: linear-gradient(91.54deg, #F5DCB7 -3.08%, #B58563 103.41%);
+    border-radius: 64px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #0E1015;
+    cursor: pointer;
+    transition: all .2s ease-in;
+  }
+  .button:hover{
+      box-shadow: 0px 5px 0px #A27553, 0px 4px 40px rgba(245, 225, 195, 0.3);
+      border-radius: 64px;
+    
+  }
+
+  .heroBox{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    color: white;
+    
+  }
+  .boxInfo{
+    position: relative;
+   
+
+  }
+  .boxAllText{
+    position: absolute;
+    left: 15.83%;
+    right: 6.95%;
+    top: 24.78%;
+    bottom: 14.63%;
+    font-family: 'RoadRadio';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 135%;
+    color: #F2F2F2;
+    padding: 30px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    
+  }
+  .boxTitle{
+    font-weight: 700;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .subTitle{
+    font-size: smaller;
+  }
+
+  .heroBottom{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-left: 50px;
+    
+   
+  }
+  .heroBottomInfo{
+    width: 655px;
+    color: white;
+    margin-top: 100px;
+    line-height: 34.2px;
+    color: #F2F2F2;
+    font-weight: 400;
+  }
+  .heroBtminfo{
+    margin-top:20px ;
+  }
+  .boxHero{
+    margin-top: 60px;
+    font-size: small;
+  }
+  .secondSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .profit_img{
+    height: 400px;
+  }
+  .sec_coin{
+    width: 500px;
+
+  }
+  .reffer{
+    margin-bottom: 10px;
+  }
+  .sec_info{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 81.5%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #002117;
+  }
+  .sec_info span{
+    text-align: right;
+    line-height: 81.5%;
+  }
+
+  .secTitleInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 4;
+  }
+  .ref_com{
+    font-size: 80px;
+    margin-top: 50px;
+    color: #00AD44;
+  }
+.sec_info div span{
+    margin-top: 4px;
+}
+  .sec_info > p:last-child{
+    font-weight: 400;
+    font-size: 80px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #00AD44;
+  }
+
+  /* 3rd section */
+  .thirdSec{
+    background-image: url('./images/chartbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ch_title{
+    margin-top: 150px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    padding: 0 20px;
+
+  }
+  /*  */
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+  }
+  /*  */
+ 
+
+  .chartDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+  }
+
+.chartDeImg{
+flex: 1;
+}
+.chartDeInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 30px;
+  margin-top: 50px;
+}
+.chart_de_img{
+  width: 600px;
+  height: 600px;
+  
+}
+.chartAllInfo{
+  display: flex;
+  flex-direction: column;
+}
+.chartInfoH{
+  font-family: 'RoadRadio';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #00AD44;
+  font-size: 30px;
+  margin-top: 4px;
+}
+.chartInfoT{
+  color: #F2F2F2;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
+
+/* 3rd sextion */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 50px;
+}
+.image-grid img{
+  max-width: 300px;
+  height: auto;
+}
+.third_sec{
+  margin-top: 100px;
+}
+.third_sec p{
+  margin-bottom: 20px;
+  margin-left: 70px;
+  font-family: 'RoadRadio';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+
+.forth_sec{
+  margin-top: 50px;
+}
+
+.depo_btn{
+  width: 191px;
+  height: 64px;
+  left: 1109px;
+  top: 4423px;
+  background: linear-gradient(91.54deg, #F5DCB7 -3.08%, #B58563 103.41%);
+  border-radius: 64px;
+  border: none;
+  transition: all .3s ease;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+.depo_btn:hover{
+  box-shadow: 0px 5px 0px #A27553, 0px 4px 40px rgba(245, 225, 195, 0.3);
+  border-radius: 64px;
+
+}
+.planBox{
+  width: 250px;
+  height: 50px;
+  background-color: #002117;
+  margin: 5px;
+  color: #FFFFFF
+}
+
+.flexCalc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrowIcon{
+  background: #00AD44;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calcText{
+  margin-left: 8px;
+}
+.planBox p{
+  margin:0 7px;
+}
+.depText p{
+  margin-left: 10px;
+  
+}
+.depText:focus{
+  outline: none;
+}
+.depText{
+  border: none;
+  text-indent: 10px;
+  margin-left: 10px;
+  
+}
+
+.depText[type="number"]::-webkit-outer-spin-button,
+.depText[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.depText[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.profit_input{
+  height: 45px;
+  width: 90px;
+  margin-left: 10px;
+  background: transparent;
+}
+.profit_input:focus{
+  outline: none;
+}
+.profit_input{
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+::placeholder{
+  color: white;
+  text-indent: 10px;
+}
+
+.selectOption{
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.calcDetails{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.calc{
+  font-family: 'RoadRadio';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #002117;
+  margin-left: 40px;
+}
+
+.fifth_sec{
+  margin-top: 60px;
+  background-image: url("./images/bottomimg.png");
+  background-color: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+ 
+}
+.btmTitle{
+
+  color: #F2F2F2;
+  font-family: myFont;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 10px 15px;
+ 
+    }
+
+.allFourDiv{
+  /* width: 560px; */
+  height: 70px;
+  background:transparent;
+  margin: 5px;
+  max-width: 1500px;
+  border-bottom: 1px solid #00AD44;
+}
+.allFourDiv{
+  display: flex;
+}
+.subDiv1{
+  flex: 1;
+  color: #00AD44;
+  font-weight: 400;
+  font-size: 45px;
+}
+.subDiv2{
+  flex: 8;
+  color: #F2F2F2;
+  margin-left: 5px;
+}
+.forthDivSubTitle{
+  font-weight: 400;
+  font-size: small;
+  font-family: myFont;
+}
+.forthDivTitel{
+  font-weight: 500;
+  font-size: 26px;
+  margin-top: 8px;
+}
+
+.fourDiv{
+  margin-top: 190px;
+  padding: 10px 15px;
+  margin-left: 40%;
+}
+.btmDes{
+  font-family: myFont;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #F2F2F2;
+  margin-top: 80px;
+  padding: 10px 15px;
+}
+.regBtn,.logo_btm{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 70px;
+}
+.logo_btm{
+  margin-top: 120px;
+}
+.btm_icon{
+  width: 40px;
+  height: 40px;
+}
+.btmDes{
+  font-family: myFont;
+  font-size: medium;
+}
+
+.btmMenuAdress{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 40px;
+}
+.btmMenu ul li{
+  list-style-type: none;
+  margin-top: 20px;
+}
+.btmMenu ul li:first-child{
+  border-bottom: 1px solid #00AD44;
+}
+.phoneIcon{
+  display: flex;
+  flex-direction: row;
+}
+.number p{
+  text-align: right;
+}
+.btmAdress>p{
+  text-align: right;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.third_sec p{
+  font-family: myFont;
+}
+
+
+  
+  /* Set the font size and margin for the table title */
+.table-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Set the font size and padding for the table cells */
+.table-key,
+.table-value {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Set the background colors for the even and odd rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
+/* Remove the border between table cells */
+td {
+  border: none;
+  border-collapse: collapse;
+}
+
+/* Add a border to the table container */
+.table-container {
+  width: 300px;
+  /* height: 425px; */
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+/* Add some margin to the table */
+table {
+  width: 295px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+} 
+.table-title{
+  text-align: center;
+  background: #F2F2F2;
+  font-size: 15px;
+  padding: 20px 0px;
+}
+
+.tableAll{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive design */
+ /* @media (min-width: 1700px) and (max-width: 5000px){
+  .btmImg {
+    position: absolute;
+    z-index: -100;
+    width: 100vw;
+    height: 110%;
+}
+  .btmMenuAdress{
+    font-size: 35px;
+    justify-content: center;
+  }
+  .btm_icon{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .btmDes{
+    font-family: myFont;
+    font-size: larger;
+  }
+} */
+
+  @media only screen and (max-width: 768px) {
+    .hero_section{
+        background-image: url('./images/resbg.png');
+        width: 100%;
+        height: 100%;
+    }
+    .nav-links {
+      position: fixed;
+      height: 100vh;
+      width: 300px;
+      top: -3px;
+      right: -350px;
+      background-color:  #002117;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      gap: 20px;
+    }
+    .nav-links li{
+      margin-left: 50%;
+    }
+  .info{
+    font-family: myFont;
+    font-size: 25px;
+    margin-top: 150px;
+    margin-right: 20px;
+  }
+  .regBtn{
+    margin-left:60%;
+    transform: translateX(0);
+    margin-top: 70px;
+  }
+  .btnBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .chartDetails{
+    background-image: url('./images/5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .chartDeInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+  }
+  .chartAllInfo:last-child{
+    margin-bottom:0;
+  }
+  .chart_de_img{
+    display: none;
+  }
+.fourDiv{
+  margin-top: 190px;
+  padding: 10px 40px;
+  margin-left: 0%;
+  
+}
+.btmImg{
+  display: none;
+}
+.fifth_sec{
+  background-image: url('./images/responBtm.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.btmTitle {
+  margin-left: 0px;
+  padding: 80px 100px;
+  font-size: 25px;
+  margin-right: 150px;
+ 
+}
+
+.btmMenu{
+  display: none;
+}
+.btmAdress>p{
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.btmAdress{
+  margin-left: 100px;
+}
+.phoneIcon{
+  margin-left: 20px;
+}
+.calc{
+  font-family: myFont;
+  font-size: 30px;
+  
+}
+.calcDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links li {
+  opacity: 0;
+}
+.image-grid {
+  grid-template-columns: 1fr;
+}
+.button{
+  margin-top: 100px;
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(91.54deg, #F5DCB7 -3.08%, #B58563 103.41%);
+  border-radius: 64px;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: smaller;
+  line-height: 200%;
+  text-align: center;
+  margin-left: 5px;
+  letter-spacing: 0.04em;
+  color: #0E1015;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+  
+    .slider {
+      display: flex;
+      flex: 1;
+      margin-left: 45px;
+    }
+  
+    .nav-active {
+      right: 0;
+    }
+  
+    .nav-links li {
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+  
+    .nav-links li:nth-child(1) {
+      transition-delay: 0.2s;
+    }
+  
+    .nav-links li:nth-child(2) {
+      transition-delay: 0.4s;
+    }
+  
+    .nav-links li:nth-child(3) {
+      transition-delay: 0.6s;
+    }
+  
+    .nav-links li:nth-child(4) {
+      transition-delay: 0.8s;
+    }
+    .heroBottom{
+        margin-top: 150px;
+    }
+    .boxInfo{
+      margin-left: 40%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .boxInfo{
+      margin-left: 40%;
+    }
+    .btmTitle {
+      font-size: 20px;
+      text-align: center;
+      
+    }
+    .subDiv1{
+      font-size: 30px;
+      margin-top: 7px;
+    }
+    .forthDivTitel{
+      font-size: 20px;
+    }
+    .forthDivSubTitle{
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .subDiv2{
+      margin-left: 13px;
+    }
+    .btmAdress>p{
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 400;
+    }
+    .btmAdress{
+      margin-left: 50px;
+    }
+    .phoneIcon{
+      margin-left: 20px;
+    }
+    .third_sec p{
+      font-family: myFont;
+      font-size: 30px;
+    }
+    .ch_title{
+      text-align: center;
+    }
+    
+  }
+
+
+
